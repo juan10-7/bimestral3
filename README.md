@@ -120,3 +120,16 @@ Facilitar el acceso a servicios jurídicos y mejorar la gestión de clientes, ci
 | **Criterios de aceptación** | El sistema debe mostrar el estado actualizado de la solicitud |
 
 ---
+## Modelo Entidad - Relación 
+![screen.jpg](screen.jpg)
+
+## Modelo Relacional 
+![screenn.jpg](screenn.jpg)
+
+## base de datos en PHP
+
+## Modelo Relacional php
+![basedatos2.jpg](basedatos2.jpg)
+
+## Base de datos
+![basedatos.jpg](basedatos.jpg)
