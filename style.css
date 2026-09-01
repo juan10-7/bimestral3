@@ -1,0 +1,136 @@
+
+/* CONFIGURACIÓN GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #1e293b;
+}
+
+
+/* ENCABEZADO */
+
+header {
+    background-color: #0f172a;
+    color: white;
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 0;
+}
+
+
+
+/* MENÚ */
+
+.nav-menu {
+    list-style: none;
+
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 16px;
+}
+
+.nav-menu a:hover,
+.nav-menu .active {
+    color: #d4af37;
+}
+
+
+/* INICIO */
+
+.inicio {
+    background-color: #1e293b;
+    color: white;
+
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.inicio-contenido {
+    width: 90%;
+    max-width: 800px;
+}
+
+.subtitulo {
+    color: #d4af37;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.inicio h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.inicio p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* BOTONES */
+
+.botones {
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.boton,
+.boton-secundario {
+    padding: 13px 25px;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+.boton {
+    background-color: #d4af37;
+    color: #0f172a;
+}
+
+.boton:hover {
+    background-color: #b8941f;
+}
+
+.boton-secundario {
+    border: 2px solid white;
+    color: white;
+}
+
+.boton-secundario:hover {
+    background-color: white;
+    color: #0f172a;
+}
+
