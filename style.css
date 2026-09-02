@@ -1,5 +1,4 @@
-
-/* CONFIGURACIÓN GENERAL */
+/* Estilos generales */
 
 * {
     margin: 0;
@@ -9,128 +8,186 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f1f5f9;
     color: #1e293b;
 }
 
 
-/* ENCABEZADO */
+/* Encabezado */
 
-header {
-    background-color: #0f172a;
-    color: white;
+header.index {
+    background-color: #1e293b;
+    padding: 20px;
 }
 
-.nav-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
 
+/* Contenedor del menú */
+
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    padding: 20px 0;
+    width: 90%;
+    margin: auto;
 }
 
 
+/* Nombre Santana Legal */
 
-/* MENÚ */
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* Lista del menú */
 
 .nav-menu {
-    list-style: none;
-
     display: flex;
-    gap: 20px;
+    gap: 15px;
+    list-style: none;
 }
+
+
+/* Enlaces */
 
 .nav-menu a {
     color: white;
     text-decoration: none;
-
-    font-size: 16px;
-}
-
-.nav-menu a:hover,
-.nav-menu .active {
-    color: #d4af37;
+    padding: 8px 12px;
 }
 
 
-/* INICIO */
+/* Cuando pasamos el mouse */
 
-.inicio {
-    background-color: #1e293b;
-    color: white;
+.nav-menu a:hover {
+    background-color: #475569;
+    border-radius: 5px;
+}
 
-    min-height: 500px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Página activa */
 
+.nav-menu a.active {
+    background-color: #2563eb;
+    border-radius: 5px;
+}
+
+
+/* Sección principal */
+
+.hero {
+    background-color: #dbeafe;
     text-align: center;
+    padding: 70px 20px;
 }
 
-.inicio-contenido {
-    width: 90%;
-    max-width: 800px;
-}
 
-.subtitulo {
-    color: #d4af37;
-    font-weight: bold;
+/* Título principal */
+
+.hero h1 {
+    font-size: 45px;
+    color: #1e3a8a;
     margin-bottom: 15px;
 }
 
-.inicio h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
+
+/* Texto principal */
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
-.inicio p {
-    font-size: 18px;
-    line-height: 1.6;
-}
 
-
-/* BOTONES */
-
-.botones {
-    margin-top: 30px;
-
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.boton,
-.boton-secundario {
-    padding: 13px 25px;
-
-    text-decoration: none;
-
-    border-radius: 6px;
-
-    font-weight: bold;
-}
+/* Botón */
 
 .boton {
-    background-color: #d4af37;
-    color: #0f172a;
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 15px;
 }
+
+
+/* Efecto del botón */
 
 .boton:hover {
-    background-color: #b8941f;
+    background-color: #1d4ed8;
 }
 
-.boton-secundario {
-    border: 2px solid white;
-    color: white;
-}
 
-.boton-secundario:hover {
+/* Tarjetas */
+
+.tarjeta {
     background-color: white;
-    color: #0f172a;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
+/* Títulos de las tarjetas */
+
+.tarjeta h3 {
+    color: #2563eb;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+
+/* Información */
+
+.informacion {
+    background-color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 30px;
+}
+
+
+/* Título de información */
+
+.informacion h2 {
+    color: #1e3a8a;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+
+/* Pie de página */
+
+footer {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+
+/* Diseño para celulares */
+
+@media (max-width: 700px) {
+
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+}

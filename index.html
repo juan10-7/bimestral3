@@ -1,14 +1,17 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Santana Legal</title>
 
+    <!-- Archivo CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
@@ -18,56 +21,16 @@
 
         <div class="nav-container">
 
-            <!-- Logo -->
-            <a href="index.html" class="logo">
-                Santana Legal
-            </a>
+            <a href="index.html" class="logo">Santana Legal</a>
 
-            <!-- Menú de navegación -->
             <nav>
                 <ul class="nav-menu">
 
-                    <li>
-                        <a href="index.html" class="active">
-                            Inicio
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="nosotros.html">
-                            Nosotros
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="servicios.html">
-                            Servicios
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="citas.html">
-                            Citas
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="blog.html">
-                            Blog
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="contacto.html">
-                            Contacto
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="login.php">
-                            Iniciar sesión
-                        </a>
-                    </li>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="citas.html">Citas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
 
                 </ul>
             </nav>
@@ -76,6 +39,113 @@
 
     </header>
 
+
+    <!-- Contenido principal -->
+    <main>
+
+        <!-- Presentación -->
+        <section class="hero">
+
+            <h1>Santana Legal</h1>
+
+            <p>
+                Tu derecho, nuestra responsabilidad
+            </p>
+
+            <p>
+                Ofrecemos servicios jurídicos de manera sencilla,
+                clara y accesible para nuestros clientes.
+            </p>
+
+            <a href="citas.html" class="boton">
+                Solicitar una cita
+            </a>
+
+        </section>
+
+
+        <!-- Servicios -->
+        <section class="p-6">
+
+            <h2 class="text-3xl font-bold text-center mb-6">
+                Nuestros servicios
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+
+                <!-- Tarjeta 1 -->
+                <div class="tarjeta">
+
+                    <h3>Asesoría Jurídica</h3>
+
+                    <p>
+                        Orientación sobre diferentes situaciones
+                        y problemas legales.
+                    </p>
+
+                </div>
+
+
+                <!-- Tarjeta 2 -->
+                <div class="tarjeta">
+
+                    <h3>Derecho Familiar</h3>
+
+                    <p>
+                        Asesoría en asuntos relacionados con
+                        la familia y sus derechos.
+                    </p>
+
+                </div>
+
+
+                <!-- Tarjeta 3 -->
+                <div class="tarjeta">
+
+                    <h3>Derecho Laboral</h3>
+
+                    <p>
+                        Orientación sobre derechos y obligaciones
+                        en el ámbito laboral.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Información -->
+        <section class="informacion">
+
+            <h2>¿Por qué elegir Santana Legal?</h2>
+
+            <p>
+                Nuestro objetivo es facilitar el acceso a los
+                servicios jurídicos mediante una página web
+                sencilla y fácil de utilizar.
+            </p>
+
+            <p>
+                Los clientes podrán conocer nuestros servicios,
+                solicitar citas y comunicarse con nosotros.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Pie de página -->
+    <footer>
+
+        <p>
+            © 2032 Santana Legal - Tu derecho, nuestra responsabilidad
+        </p>
+
+    </footer>
+
 </body>
 
-
+</html>
