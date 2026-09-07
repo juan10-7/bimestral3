@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Iniciar sesión - Santana Legal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header class="index">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                Santana Legal
+            </a>
+
+            <nav>
+                <ul class="nav-menu">
+
+                    <li>
+                        <a href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicios.html">
+                            Servicios
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="citas.php">
+                        Citas
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="login.html" class="active">
+                            Iniciar sesión
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- Contenido principal -->
+    <main>
+
+        <section class="titulo-pagina">
+
+            <h1>Cuenta de Santana Legal</h1>
+
+            <p>
+                Inicia sesión o crea una cuenta para solicitar
+                nuestros servicios jurídicos.
+            </p>
+
+        </section>
+
+
+        <!-- Contenedores de inicio de sesión y registro -->
+        <section class="cuentas">
+
+
+            <!-- INICIAR SESIÓN -->
+            <div class="formulario cuenta">
+
+                <h2>Iniciar sesión</h2>
+
+                <p class="texto-formulario">
+                    Si ya tienes una cuenta, ingresa tus datos.
+                </p>
+
+
+                <form action="login.php" method="post">
+
+                    <label for="correo-login">
+                        Correo electrónico:
+                    </label>
+
+                    <input
+                        type="email"
+                        id="correo-login"
+                        name="correo"
+                        placeholder="ejemplo@gmail.com"
+                        required
+                    >
+
+
+                    <label for="password-login">
+                        Contraseña:
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password-login"
+                        name="password"
+                        placeholder="Escribe tu contraseña"
+                        required
+                    >
+
+
+                    <button type="submit" class="boton">
+                        Iniciar sesión
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- CREAR CUENTA -->
+            <div class="formulario cuenta">
+
+                <h2>Crear una cuenta</h2>
+
+                <p class="texto-formulario">
+                    Si eres nuevo, completa el siguiente formulario.
+                </p>
+
+
+                <form action="registro.php" method="post">
+
+                    <label for="nombre">
+                        Nombre:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Escribe tu nombre"
+                        required
+                    >
+
+
+                    <label for="apellido">
+                        Apellido:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="apellido"
+                        name="apellido"
+                        placeholder="Escribe tu apellido"
+                        required
+                    >
+
+
+                    <label for="correo">
+                        Correo electrónico:
+                    </label>
+
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="ejemplo@gmail.com"
+                        required
+                    >
+
+
+                    <label for="telefono">
+                        Teléfono:
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        placeholder="Escribe tu teléfono"
+                        required
+                    >
+
+
+                    <label for="password">
+                        Contraseña:
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Crea una contraseña"
+                        required
+                    >
+
+
+                    <button type="submit" class="boton">
+                        Crear cuenta
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Pie de página -->
+    <footer>
+
+        <p>
+            © 2032 Santana Legal -
+            Tu derecho, nuestra responsabilidad
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
+

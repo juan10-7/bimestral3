@@ -1,4 +1,7 @@
-/* Estilos generales */
+
+/* =========================
+   ESTILOS GENERALES
+   ========================= */
 
 * {
     margin: 0;
@@ -13,7 +16,9 @@ body {
 }
 
 
-/* Encabezado */
+/* =========================
+   ENCABEZADO
+   ========================= */
 
 header.index {
     background-color: #1e293b;
@@ -76,7 +81,9 @@ header.index {
 }
 
 
-/* Sección principal */
+/* =========================
+   PÁGINA PRINCIPAL
+   ========================= */
 
 .hero {
     background-color: #dbeafe;
@@ -85,8 +92,6 @@ header.index {
 }
 
 
-/* Título principal */
-
 .hero h1 {
     font-size: 45px;
     color: #1e3a8a;
@@ -94,15 +99,15 @@ header.index {
 }
 
 
-/* Texto principal */
-
 .hero p {
     font-size: 20px;
     margin-bottom: 15px;
 }
 
 
-/* Botón */
+/* =========================
+   BOTONES
+   ========================= */
 
 .boton {
     display: inline-block;
@@ -110,19 +115,28 @@ header.index {
     color: white;
     padding: 12px 25px;
     text-decoration: none;
+    border: none;
     border-radius: 8px;
     margin-top: 15px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-
-/* Efecto del botón */
 
 .boton:hover {
     background-color: #1d4ed8;
 }
 
 
-/* Tarjetas */
+.centrar-boton {
+    text-align: center;
+    margin: 30px;
+}
+
+
+/* =========================
+   TARJETAS
+   ========================= */
 
 .tarjeta {
     background-color: white;
@@ -133,8 +147,6 @@ header.index {
 }
 
 
-/* Títulos de las tarjetas */
-
 .tarjeta h3 {
     color: #2563eb;
     font-size: 22px;
@@ -142,7 +154,9 @@ header.index {
 }
 
 
-/* Información */
+/* =========================
+   INFORMACIÓN
+   ========================= */
 
 .informacion {
     background-color: white;
@@ -152,8 +166,6 @@ header.index {
 }
 
 
-/* Título de información */
-
 .informacion h2 {
     color: #1e3a8a;
     font-size: 30px;
@@ -161,7 +173,182 @@ header.index {
 }
 
 
-/* Pie de página */
+.informacion p {
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   TÍTULOS DE LAS PÁGINAS
+   ========================= */
+
+.titulo-pagina {
+    background-color: #dbeafe;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+
+.titulo-pagina h1 {
+    color: #1e3a8a;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+
+.titulo-pagina p {
+    font-size: 18px;
+}
+
+
+/* =========================
+   SERVICIOS
+   ========================= */
+
+.servicios {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+
+.tarjeta-servicio {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.tarjeta-servicio h2 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+
+.tarjeta-servicio p {
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   TABLAS
+   ========================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+th {
+    background-color: #1e293b;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #cbd5e1;
+}
+
+
+tr:hover {
+    background-color: #eff6ff;
+}
+
+
+/* =========================
+   FORMULARIO DE CITAS
+   ========================= */
+
+.formulario {
+    background-color: white;
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.formulario label {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+
+/* =========================
+   CONTACTO
+   ========================= */
+
+.contacto {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+
+.contacto .tarjeta h2 {
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+
+.contacto .tarjeta p {
+    margin-bottom: 12px;
+}
+
+
+/* Diploma */
+
+.diploma {
+    width: 100%;
+    max-width: 450px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid #cbd5e1;
+}
+
+
+/* =========================
+   PIE DE PÁGINA
+   ========================= */
 
 footer {
     background-color: #1e293b;
@@ -172,7 +359,9 @@ footer {
 }
 
 
-/* Diseño para celulares */
+/* =========================
+   DISEÑO PARA CELULARES
+   ========================= */
 
 @media (max-width: 700px) {
 
@@ -181,13 +370,89 @@ footer {
         gap: 15px;
     }
 
+
     .nav-menu {
         flex-direction: column;
         text-align: center;
     }
 
+
     .hero h1 {
         font-size: 35px;
     }
 
+
+    .titulo-pagina h1 {
+        font-size: 32px;
+    }
+
+
+    .servicios {
+        grid-template-columns: 1fr;
+    }
+
+
+    .contacto {
+        grid-template-columns: 1fr;
+    }
+
+
+    .formulario {
+        width: 95%;
+        padding: 20px;
+    }
+
 }
+
+/* =========================
+   INICIO DE SESIÓN
+   ========================= */
+
+.cuentas {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+
+.cuenta {
+    margin: 0;
+}
+
+
+.cuenta h2 {
+    color: #1e3a8a;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+
+.texto-formulario {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* Botón del formulario */
+
+.cuenta .boton {
+    width: 100%;
+}
+
+
+/* =========================
+   CELULARES
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .cuentas {
+        grid-template-columns: 1fr;
+    }
+
+}
+
