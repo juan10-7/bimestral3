@@ -13,8 +13,8 @@ if (!isset($_SESSION["id_usuario"])) {
 // Obtener los servicios de la base de datos
 $consulta = $conexion->query(
     "SELECT id_servicio, nombre, precio
-     FROM servicios
-     ORDER BY nombre"
+    FROM servicios
+    ORDER BY nombre"
 );
 
 ?>
@@ -27,7 +27,7 @@ $consulta = $conexion->query(
     <meta charset="UTF-8">
 
     <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+            content="width=device-width, initial-scale=1.0">
 
     <title>Solicitar cita - Santana Legal</title>
 
@@ -168,18 +168,18 @@ $consulta = $conexion->query(
 
                     while ($servicio = $consulta->fetch_assoc()) {
 
-                        echo "<option value='" .
-                             $servicio["id_servicio"] .
-                             "'>" .
-                             $servicio["nombre"] .
-                             " - $" .
-                             number_format(
-                                 $servicio["precio"],
-                                 0,
-                                 ",",
-                                 "."
-                             ) .
-                             "</option>";
+                            echo "<option value='" .
+                            $servicio["id_servicio"] .
+                            "'>" .
+                            $servicio["nombre"] .
+                            " - $" .
+                            number_format(
+                                $servicio["precio"],
+                                0,
+                                ",",
+                                "."
+                            ) .
+                            "</option>";
                     }
 
                     ?>
