@@ -121,15 +121,23 @@ Facilitar el acceso a servicios jurídicos y mejorar la gestión de clientes, ci
 
 ---
 ## Modelo Entidad - Relación 
-![screen.jpg](screen.jpg)
+![screen.jpg](img/screen.jpg)
 
 ## Modelo Relacional 
-![screenn.jpg](screenn.jpg)
+![screenn.jpg](img/screenn.jpg)
 
 ## base de datos en PHP
 
 ## Modelo Relacional php
-![basedatos2.jpg](basedatos2.jpg)
+![basedatos2.jpg](img/basedatos2.jpg)
 
 ## Base de datos
-![basedatos.jpg](basedatos.jpg)
+![basedatos.jpg](img/basedatos.jpg)
+
+## pantallazo pagina web
+![screen06.jpg](img/screen06.jpg)
+
+## enlace a la pagina web
+https://santanalegal.infinityfreeapp.com
+
+profe acuerdese que si no le funciona toca en incognito o en otro navegador.
